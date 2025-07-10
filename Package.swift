@@ -13,7 +13,7 @@ let package = Package(
     ],
 
     targets: [
-        .target(name: "SwiftLMDB", dependencies: [.product(name: "LMDB", package: "CLMDB")], path: "Sources"),
+        .target(name: "SwiftLMDB", dependencies: [.product(name: "LMDB", package: "CLMDB_github")], path: "Sources"),
         .testTarget(name: "SwiftLMDBTests", dependencies: ["SwiftLMDB"]),
     ]
 )
